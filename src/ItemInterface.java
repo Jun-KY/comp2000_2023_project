@@ -39,4 +39,6 @@ public interface ItemInterface {
      * @return true if the Items definition matches 'def'
      */
     boolean isOf(ItemDefinition def);
+
+    // String getAll();
 }

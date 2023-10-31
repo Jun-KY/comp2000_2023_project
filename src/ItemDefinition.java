@@ -14,14 +14,17 @@ public class ItemDefinition {
         isBaseItem = weightIfBase.isPresent();
         weight = weightIfBase;
 
-        // This may be helpful for the compsite pattern to find the appropriate item definitions
+        // This may be helpful for the compsite pattern to find the appropriate item
+        // definitions
         ItemDictionary dict = ItemDictionary.get();
 
     }
 
     /**
      * Create an instance of the item described by this ItemDefinition.
-     * If the Item is made up of other items, then each sub-item should also be created.
+     * If the Item is made up of other items, then each sub-item should also be
+     * created.
+     * 
      * @return An Item instance described by the ItemDefinition
      */
     public Item create() {
@@ -31,7 +34,8 @@ public class ItemDefinition {
         return item;
     }
 
-    // ItemDefinition might "craft" and return an item, using items from some source inventory.
+    // ItemDefinition might "craft" and return an item, using items from some source
+    // inventory.
     // You might use the Milestone 1 Basket transaction code as a guide
 
     public String getName() {
@@ -44,6 +48,7 @@ public class ItemDefinition {
 
     /**
      * Format: {ITEM 1}, {ITEM 2}, ...
+     * 
      * @return a String of sub-item/component names in the above format
      */
     public String componentsString() {
@@ -66,8 +71,12 @@ public class ItemDefinition {
         return isOf(other.getDefinition());
     }
 
-	public boolean isOf(ItemDefinition def) {
-		return getName().equals(def.getName());
-	}
+    public boolean isOf(ItemDefinition def) {
+        return getName().equals(def.getName());
+    }
+
+    public void setWeight(double weight) {
+        this.weight = Optional.of(weight);
+    }
 
 }

@@ -7,6 +7,15 @@ Your major creative work is worth 60% of your unit total and is made up of four 
   * __Milestone 2: 20%__
   * __Viva Exam: 20%__
 
+## READ
+Task 1 option 1
+ - Strategy pattern chapter
+ - Task 18
+Task 2
+ - Composite ch
+ - Task 20
+
+
 ## Milestone 2
 ### Due date is Sunday 22nd of October 2023, at 11:55 pm.
 
